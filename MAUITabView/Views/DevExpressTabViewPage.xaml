@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUITabView.DevExpressTabViewPage"
+             xmlns:local="clr-namespace:MAUITabView"
+             xmlns:dx="http://schemas.devexpress.com/maui"
+             Title="DevExpressTabViewPage">
+
+    <ContentPage.BindingContext>
+        <local:EmployeeDetails/>
+    </ContentPage.BindingContext>
+
+
+    <Grid>
+        <dx:TabView x:Name="devTabView" Loaded="DevTabView_Loaded">
+            <dx:TabViewItem HeaderText="Tab1">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab2">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab3">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+            <dx:TabViewItem HeaderText="Tab4">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab5">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab6">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab7">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab8">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+            <dx:TabViewItem HeaderText="Tab9">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab10">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab11">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab12">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab13">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+            <dx:TabViewItem HeaderText="Tab14">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab15">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab16">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab17">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab18">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+            <dx:TabViewItem HeaderText="Tab19">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+
+            <dx:TabViewItem HeaderText="Tab20">
+                <dx:TabViewItem.Content>
+                    <Grid>
+                        <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                            <ListView.ItemTemplate >
+                                <DataTemplate x:DataType="{x:Type local:Employee}">
+                                    <ViewCell>
+                                        <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </dx:TabViewItem.Content>
+            </dx:TabViewItem>
+        </dx:TabView>
+    </Grid>
+    
+</ContentPage>

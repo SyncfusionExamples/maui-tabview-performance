@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUITabView.MainPage">
+
+    <VerticalStackLayout WidthRequest="400" Spacing="20">
+        <Button Text="DevExpress" Clicked="Button_Clicked"/>
+        <Button Text="Syncfusion" Clicked="Button_Clicked_1"/>
+        <Button Text="Telerik" Clicked="Button_Clicked_2"/>
+    </VerticalStackLayout>
+
+</ContentPage>

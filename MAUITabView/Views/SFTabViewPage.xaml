@@ -12,7 +12,7 @@
 
 
     <Grid>
-        <tabView:SfTabView IsScrollButtonEnabled="True" EnableVirtualization="False" Loaded="SFTabView_Loaded" x:Name="tabView">
+        <tabView:SfTabView EnableVirtualization="True" Loaded="SFTabView_Loaded" x:Name="tabView">
             <tabView:SfTabItem Header="Tab1">
                 <Grid>
                     <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">

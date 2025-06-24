@@ -16,7 +16,7 @@ public partial class DevExpressTabViewPage : ContentPage
     private void DevTabView_Loaded(object? sender, EventArgs e)
     {
         stopwatch.Stop();
-        DisplayAlert("Time Takes loaded TabView", stopwatch.Elapsed.TotalSeconds.ToString(), "cancel");
+        DisplayAlert("Time Takes loaded TabView", stopwatch.Elapsed.TotalMilliseconds.ToString(), "cancel");
     }
 
     protected override void OnAppearing()

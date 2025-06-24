@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUITabView.SFTabViewPage"
              xmlns:local="clr-namespace:MAUITabView"
-             xmlns:tabView="clr-namespace:Syncfusion.Maui.TabView;assembly=Syncfusion.Maui.TabView"
+             xmlns:tabView="clr-namespace:Syncfusion.Maui.Toolkit.TabView;assembly=Syncfusion.Maui.Toolkit"
              Title="SFTabView">
 
     <ContentPage.BindingContext>
@@ -12,265 +12,225 @@
 
 
     <Grid>
-        <tabView:SfTabView IsScrollButtonEnabled="True" Loaded="SFTabView_Loaded" x:Name="tabView">
+        <tabView:SfTabView IsScrollButtonEnabled="True" EnableVirtualization="False" Loaded="SFTabView_Loaded" x:Name="tabView">
             <tabView:SfTabItem Header="Tab1">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab2">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab3">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab4">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab5">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab6">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab7">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab8">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab9">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab10">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab11">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
-                            <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab12">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab13">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab14">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab15">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab16">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab17">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab18">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab19">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
             <tabView:SfTabItem Header="Tab20">
                 <Grid>
-                    <ListView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                        <ListView.ItemTemplate >
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
                             <DataTemplate x:DataType="{x:Type local:Employee}">
-                                <ViewCell>
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </ViewCell>
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
                             </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
                 </Grid>
             </tabView:SfTabItem>
         </tabView:SfTabView>

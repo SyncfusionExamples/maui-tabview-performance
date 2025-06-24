@@ -1,6 +1,6 @@
 ﻿using DevExpress.Maui;
 using Microsoft.Extensions.Logging;
-using Syncfusion.Maui.Core.Hosting;
+using Syncfusion.Maui.Toolkit.Hosting;
 using Telerik.Maui.Controls.Compatibility;
 
 namespace MAUITabView
@@ -15,7 +15,7 @@ namespace MAUITabView
                 .UseDevExpress()
                 .UseDevExpressControls()
                 .UseTelerik()
-                .ConfigureSyncfusionCore()
+                .ConfigureSyncfusionToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

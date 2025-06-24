@@ -29,6 +29,6 @@ public partial class SFTabViewPage : ContentPage
     private void SFTabView_Loaded(object? sender, EventArgs e)
     {
         stopwatch.Stop();
-        DisplayAlert("Time Takes loaded TabView", stopwatch.Elapsed.TotalSeconds.ToString(), "cancel");
+        DisplayAlert("Time Takes loaded TabView", stopwatch.Elapsed.TotalMilliseconds.ToString(), "cancel");
     }
 }

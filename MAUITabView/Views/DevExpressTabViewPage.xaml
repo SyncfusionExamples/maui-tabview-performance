@@ -12,6 +12,7 @@
 
 
     <Grid>
+        <!--With Content-->
         <dx:TabView x:Name="devTabView" Loaded="DevTabView_Loaded">
             <dx:TabViewItem HeaderText="Tab1">
                 <dx:TabViewItem.Content>
@@ -150,145 +151,20 @@
                     </Grid>
                 </dx:TabViewItem.Content>
             </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab11">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab12">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab13">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-            <dx:TabViewItem HeaderText="Tab14">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab15">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab16">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab17">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab18">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-            <dx:TabViewItem HeaderText="Tab19">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
-
-            <dx:TabViewItem HeaderText="Tab20">
-                <dx:TabViewItem.Content>
-                    <Grid>
-                        <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                            <CollectionView.ItemTemplate >
-                                <DataTemplate x:DataType="{x:Type local:Employee}">
-                                    <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                                </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>
-                    </Grid>
-                </dx:TabViewItem.Content>
-            </dx:TabViewItem>
         </dx:TabView>
+        <!--Without Content-->
+        <!--<dx:TabView Loaded="DevTabView_Loaded">
+            <dx:TabViewItem HeaderText="Tab 1" />
+            <dx:TabViewItem HeaderText="Tab 2" />
+            <dx:TabViewItem HeaderText="Tab 3" />
+            <dx:TabViewItem HeaderText="Tab 4" />
+            <dx:TabViewItem HeaderText="Tab 5" />
+            <dx:TabViewItem HeaderText="Tab 6" />
+            <dx:TabViewItem HeaderText="Tab 7" />
+            <dx:TabViewItem HeaderText="Tab 8" />
+            <dx:TabViewItem HeaderText="Tab 9" />
+            <dx:TabViewItem HeaderText="Tab 10" />
+        </dx:TabView>-->
     </Grid>
     
 </ContentPage>

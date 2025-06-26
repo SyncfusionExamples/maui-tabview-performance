@@ -126,7 +126,7 @@
             </tabView:SfTabItem>
         </tabView:SfTabView>
         <!--Without Content-->
-        <!--<tabView:SfTabView Loaded="SFTabView_Loaded">
+        <!--<tabView:SfTabView Loaded="SFTabView_Loaded" EnableVirtualization="False">
             <tabView:SfTabItem Header="Tab 1" />
             <tabView:SfTabItem Header="Tab 2" />
             <tabView:SfTabItem Header="Tab 3" />

@@ -3,238 +3,141 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUITabView.TelerikTabViewPage"
              xmlns:local="clr-namespace:MAUITabView"
-              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+              xmlns:telerik="clr-namespace:Telerik.Maui.Controls;assembly=Telerik.Maui.Controls"
              Title="TelerikTabViewPage">
 
     <ContentPage.BindingContext>
         <local:EmployeeDetails/>
     </ContentPage.BindingContext>
 
-
-    <telerik:RadTabView x:Name="telerikTabView" Loaded="TelerikTabView_Loaded" IsHeaderScrollable="True" >
-        <telerik:TabViewItem HeaderText="Tab1">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab2">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab3">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab4">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab5">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab6">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab7">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab8">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab9">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab10">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab11">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab12">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab13">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab14">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab15">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab16">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab17">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab18">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab19">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        <telerik:TabViewItem HeaderText="Tab20">
-            <Grid>
-                <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
-                    <CollectionView.ItemTemplate >
-                        <DataTemplate x:DataType="{x:Type local:Employee}">
-                            <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </Grid>
-        </telerik:TabViewItem>
-        
-
-    </telerik:RadTabView>
+    <Grid>
+        <!--With Content-->
+        <telerik:RadTabView x:Name="telerikTabView" Loaded="TelerikTabView_Loaded" IsHeaderScrollable="True" >
+            <telerik:TabViewItem HeaderText="Tab1">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab2">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab3">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab4">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab5">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab6">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab7">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab8">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab9">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Tab10">
+                <Grid>
+                    <CollectionView ItemsSource="{Binding EmployeeDetailsList}" x:DataType="{x:Type local:EmployeeDetails}">
+                        <CollectionView.ItemTemplate >
+                            <DataTemplate x:DataType="{x:Type local:Employee}">
+                                <Label Text="{Binding Name}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" HeightRequest="40"/>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </telerik:TabViewItem>
+        </telerik:RadTabView>
+        <!--Without Content-->
+        <!--<telerik:RadTabView Loaded="TelerikTabView_Loaded" IsHeaderScrollable="True">
+            <telerik:TabViewItem HeaderText="Tab 1" />
+            <telerik:TabViewItem HeaderText="Tab 2" />
+            <telerik:TabViewItem HeaderText="Tab 3" />
+            <telerik:TabViewItem HeaderText="Tab 4" />
+            <telerik:TabViewItem HeaderText="Tab 5" />
+            <telerik:TabViewItem HeaderText="Tab 6" />
+            <telerik:TabViewItem HeaderText="Tab 7" />
+            <telerik:TabViewItem HeaderText="Tab 8" />
+            <telerik:TabViewItem HeaderText="Tab 9" />
+            <telerik:TabViewItem HeaderText="Tab 10" />
+        </telerik:RadTabView>-->
+    </Grid>
 
 
 </ContentPage>

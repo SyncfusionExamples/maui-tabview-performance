@@ -2,16 +2,6 @@
 
 This repository holds the performance testing example samples for the .NET MAUI TabView.
 
-## Sample
-
-```xaml
-    <VerticalStackLayout WidthRequest="400" Spacing="20">
-        <Button Text="DevExpress" Clicked="Button_Clicked"/>
-        <Button Text="Syncfusion" Clicked="Button_Clicked_1"/>
-        <Button Text="Telerik" Clicked="Button_Clicked_2"/>
-    </VerticalStackLayout>
-```
-
 ## Requirements to run the demo
 
 To run the demo, refer to [System Requirements for .NET MAUI](https://help.syncfusion.com/maui/system-requirements)
